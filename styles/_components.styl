@@ -1,0 +1,52 @@
+body
+  font 20px HelveticaNeueLight
+  
+h1
+  font-size 48px
+  font-size 2.4em
+  line-height 1.4em
+
+h2
+  font-size 42px
+  font-size 2.1em
+  line-height 2.5em
+  
+h3
+  font-size 32px
+  font-size 1.6em
+  line-height 2.15em
+
+a
+  cursor pointer
+  
+.container
+  box-sizing border-box
+  margin 0 auto
+  max-width $maxWidthDesktop
+
+.btn
+  border 2px solid $brand-primary
+  border-radius 4px
+  box-sizing border-box
+  color $brand-primary
+  cursor pointer
+  font-size .8em
+  height 45px
+  line-height 40px
+  text-align center
+  width 170px
+  
+  &:hover
+    border-color lighten($brand-primary, 20)
+    color lighten($brand-primary, 20)
+    
+  &.text-white
+    color $white
+  
+  &.filled
+    background-color $brand-primary
+    color $white
+    
+    &:hover
+      background-color lighten($brand-primary, 20)
+      
