@@ -1,0 +1,8 @@
+{
+  "name": "Ray Homepage",
+  "version": "0.0.1",
+  "description": "Homepage for Ray Remotes",
+  "dependencies": {
+     "harp": "*"
+  }
+}
