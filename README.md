@@ -2,8 +2,8 @@
 
 ## Development
 
-* Uses Harp to compile to static HTML page: `http://harpjs.com/`
+* Uses [Harp](http://harpjs.com/) to compile to static HTML page
 
   - Jade, Stylus, and Coffeescript
 
-* Hosted on Heroku at: `https://ray-home.herokuapp.com/`
+* Hosted on Heroku [here](https://ray-home.herokuapp.com/)
