@@ -1,0 +1,52 @@
+.search-and-discovery
+  height 1300px
+  position relative
+  .container
+    .right-side-background
+      background-color lighten($gray-light, 25)
+      bottom 0
+      left 50%
+      position absolute
+      right 0
+      top 0
+      
+    .blurb
+      position absolute
+      width 300px
+      height 400px
+      left 50%
+
+      &.left
+        text-align right
+        transform translateX(-550px)
+        top 40px
+        
+        h3
+          margin-left auto
+          margin-right 0
+
+      &.right
+        bottom 40px
+        transform translateX(250px)
+        
+      h3
+        line-height 1.3em
+        width 190px
+        
+      p
+        margin-bottom 30px
+
+    .phone
+      border 1px solid black
+      position absolute
+      height 600px
+      width 300px
+      left 50%
+      
+      &.left
+        top 300px
+        transform translateX(-250px)
+        
+      &.right
+        top 350px
+        transform translateX(-50px)
