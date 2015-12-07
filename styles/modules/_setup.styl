@@ -1,35 +1,56 @@
+$text-color = #ABABAB
+
 .setup
-  background-color $black
+  background url('../../assets/Setup_BG.jpg')
   color $white
   text-align center
 
   .container
     padding 50px 0
+    position relative
+    overflow hidden
+    
+    .ray-sample
+      video
+        position absolute
+        height 550px
+        top 140px
+        transform translate(-400px)
+        
+      img
+        position absolute
+        height 800px
+        left 50%
+        transform translate(-750px)
+        top -50px
     
     .info-container
       display inline-block
       margin-left 500px
-      max-width 330px
+      max-width 400px
       text-align left
       
-      h3
+      h2
         line-height 1.2em
         
       .advantages
         margin-bottom 25px
         
         .advantage
+          color $text-color
           display table-row
           margin-bottom 30px
           
           p
             display table-cell
+            font-family HelveticaNeueLight
             padding 15px 0
             vertical-align middle
+            width 250px
           
           .image-container
             display table-cell
-            width 100px
+            width 150px
             text-align right
             vertical-align middle
 

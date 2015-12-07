@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15855) - http://www.bohemiancoding.com/sketch -->
+    <title>Streaming Devices Copy + Media Player Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Setup" sketch:type="MSArtboardGroup" transform="translate(-565.000000, -891.000000)" fill="#000000">
+            <g id="Streaming-Devices-Copy-+-Media-Player-Copy" sketch:type="MSLayerGroup" transform="translate(565.000000, 891.000000)">
+                <g id="Streaming-Devices-Copy" sketch:type="MSShapeGroup">
+                    <path d="M0,7.0052243 C0,3.13634575 3.13178748,0 7.0052243,0 L28.9947757,0 C32.8636542,0 36,3.13178748 36,7.0052243 L36,28.9947757 C36,32.8636542 32.8682125,36 28.9947757,36 L7.0052243,36 C3.13634575,36 0,32.8682125 0,28.9947757 L0,7.0052243 Z M21.9288816,13.747498 C21.6585284,13.747498 21.3963955,13.7821616 21.1376876,13.824332 C20.071802,11.9829657 18.0382165,10.7368421 15.7011687,10.7368421 C12.2619295,10.7368421 9.47368421,13.4328761 9.47368421,16.7583747 C9.47368421,20.0838733 12.2619295,22.7799073 15.7011687,22.7799073 L21.9288816,22.7799073 C24.5084252,22.7799073 26.5990954,20.7574954 26.5990954,18.2641442 C26.5990954,15.7699099 24.5084252,13.747498 21.9288816,13.747498 Z M19.9621679,17.4397922 L16.7639555,15.4464333 C16.5977029,15.3429092 16.3282591,15.3429092 16.1620065,15.4464333 L16.1620065,19.8081072 C16.3282591,19.9116313 16.5977029,19.9116313 16.7639555,19.8081072 L19.9621679,17.81498 C20.1284205,17.7112243 20.1284205,17.5433162 19.9621679,17.4397922 Z" id="Rectangle-102"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -2,21 +2,32 @@
   background-color $black
   color $white
   margin-top 60px
+  position relative
   text-align center
   
+  video
+    position absolute
+    left 0
+    top 0
+    width 100%
+    height 100%
+    z-index -1
+  
   .container
-    padding 150px
+    padding 200px
     
     h1
       margin-top 0
-      margin-bottom 10px
+      margin-bottom 20px
     
     .intro
+      font-family Roboto
+      font-weight 300
       font-size 28px
       font-size 1.4em
-      line-height 1.85em
+      line-height 1.55em
       margin 0 auto
-      max-width 650px
+      max-width 620px
 
     .controls
       display inline-block
@@ -32,9 +43,10 @@
           padding-left 25px
            
           .fa
-            background-color $brand-primary
             border-radius 100px
-            font-size 9px
+            background-color $white
+            color $brand-primary
+            font-size 23px
             height 20px
             left 10px
             line-height 20px

@@ -13,10 +13,12 @@ $alt-text-color = lighten($gray-light, 20)
       float left
       
       .label
+        font 500 .9em Roboto
         color $alt-text-color
         text-transform uppercase
         
       a
+        font .8em Roboto
         display block
         margin-top 15px
         
@@ -60,18 +62,26 @@ $alt-text-color = lighten($gray-light, 20)
           div
             margin-top 10px
             
+            .fa
+              color $alt-text-color
+              margin-left 5px
+            
+        .left-container
+          font 400 .8em Roboto
+            
         .right-container
           color $alt-text-color
+          font 300 .8em Roboto
+          margin-top 8px
             
       &.social .subscribe
-        margin-top 40px
+        margin-top 53px
         
 .footer-bottom
   background-color $gray-dark
   color $white
   padding 40px 130px
-  font-size 14px
-  font-size .7em
+  font 300 .7em Roboto 
   color $alt-text-color
   
   a

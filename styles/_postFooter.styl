@@ -1,11 +1,26 @@
 .post-footer
   background-color $black
   color $white
+  font .8em HelveticaNeueLight
+  
   .container
-    padding 300px 0 150px
+    padding 300px 0 200px
+    position relative
     text-align center 
-    
+    overflow hidden
+
+    .inverted-ray
+      position absolute
+      height 550px
+      left 50%
+      top -270px
+      transform translateX(-120px)
+      
+      img
+        height 100%
+
     h1
+      font-weight 300
       margin-bottom 5px
     
     .block
@@ -15,7 +30,7 @@
         margin 5px 0 0
     
     .line
-      width 50px
+      width 40px
       border-bottom 1px solid $white
       margin 0 auto
     
@@ -24,6 +39,8 @@
       margin 20px 0
       
     .contact
+      letter-spacing 2px
+
       a
         text-transform uppercase
         border-right 1px solid $white
@@ -31,3 +48,13 @@
 
         &:last-child
           border 0
+    
+    .hand
+      position absolute
+      bottom -200px
+      left 50%
+      height 400px
+      transform translateX(-200px)
+
+      img
+        height 100%
