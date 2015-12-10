@@ -1,6 +1,6 @@
 $alt-text-color = lighten($gray-light, 20)
 
-.footer
+.footer-desktop
   background-color $gray-light
   color $white
   height 350px
@@ -168,6 +168,78 @@ $alt-text-color = lighten($gray-light, 20)
           .label
             text-align center
 
+.footer-mobile
+  background-color $gray-light
+  color $white
+  text-align center
+  padding 50px 0 50px
+
+  .container
+    .label
+      font 500 .9em Roboto
+      color $alt-text-color
+      text-transform uppercase
+      margin 70px 0 30px
+
+    a
+      display block
+      margin-bottom 30px
+
+      &.fa
+        display inline-block
+        border-radius 100px
+        background-color $white
+        color $alt-text-color
+        height 40px
+        width 40px
+        margin 0 10px
+        line-height 40px
+
+    .contact
+      max-width 275px
+      margin 0 auto
+      padding-bottom 50px
+
+      .label
+        margin-top 0
+
+      .btn
+        border 1px solid $white
+        margin 15px auto
+        width 100%
+        height 50px
+        line-height 50px
+
+        .fa
+          color $alt-text-color
+          margin-right 7px
+
+      .left-container, .right-container
+        text-align left
+        width 50%
+        display inline-block
+
+        div
+          margin-top 10px
+
+      .left-container
+        font 400 1em Roboto
+
+      .right-container
+        box-sizing border-box
+        padding-left 30px
+        color $alt-text-color
+        font 300 1em Roboto
+
+    .company
+      border-top 1px solid $alt-text-color
+
+    .subscribe
+      width 200px
+      margin 50px auto 0
+
+
+
 .footer-bottom
   background-color $gray-dark
   color $white
@@ -183,6 +255,9 @@ $alt-text-color = lighten($gray-light, 20)
   @media $tabletPortraitBreakpoint
     text-align center
     padding-bottom 100px
+
+  @media $mobileBreakpoint
+    padding 0 0 200px
 
   a
     border-left 1px solid $alt-text-color

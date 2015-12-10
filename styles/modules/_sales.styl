@@ -21,6 +21,10 @@
         margin-left 70%
         margin-top 0
 
+      @media $mobileBreakpoint
+        max-width 350px
+        margin 0 auto 200px
+
       h1
         font 400 2.5em Roboto
         margin 0 0 20px
@@ -28,6 +32,9 @@
       p
         font 300 1.4em/1.4em Roboto
         margin 0 0 20px
+
+        @media $mobileBreakpoint
+          max-width 300px
 
     .ray-back-container
       position absolute
@@ -46,6 +53,10 @@
 
         @media $tabletLandscapeBreakpoint
           transform translateX(-200px)
+
+        @media $mobileBreakpoint
+          bottom -250px
+          width 250px
 
         img
           width 100%

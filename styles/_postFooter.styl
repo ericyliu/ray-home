@@ -2,11 +2,11 @@
   background-color $black
   color $white
   font .8em HelveticaNeueLight
-  
+
   .container
     padding 300px 0 200px
     position relative
-    text-align center 
+    text-align center
     overflow hidden
 
     .inverted-ray
@@ -15,29 +15,33 @@
       left 50%
       top -270px
       transform translateX(-120px)
-      
+
       img
         height 100%
 
     h1
       font-weight 300
       margin-bottom 5px
-    
+
+      @media $mobileBreakpoint
+        font-size 48px
+        font-size 2.4em
+
     .block
       margin-bottom 30px
-      
+
       p
         margin 5px 0 0
-    
+
     .line
       width 40px
       border-bottom 1px solid $white
       margin 0 auto
-    
+
     .contact-label
       color $brand-primary
       margin 20px 0
-      
+
     .contact
       letter-spacing 2px
 
@@ -48,7 +52,7 @@
 
         &:last-child
           border 0
-    
+
     .hand
       position absolute
       bottom -200px

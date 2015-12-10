@@ -36,6 +36,11 @@
       @media $tabletPortraitBreakpoint
         width 45%
 
+      @media $mobileBreakpoint
+        text-align center
+        width 100%
+        max-width 300px
+
     .static-ray
       position absolute
       bottom -170px
@@ -47,6 +52,13 @@
 
       @media $tabletPortraitBreakpoint
         right -220px
+
+      @media $mobileBreakpoint
+        position relative
+        right auto
+        bottom auto
+        margin-bottom -320px
+        left -55px
 
       img
         height 100%
