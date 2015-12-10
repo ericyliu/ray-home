@@ -8,19 +8,27 @@
     padding 100px 0 50px
     position relative
 
+    @media $tabletLandscapeBreakpoint
+      padding-top 75px
+
     .blurb
       max-width 350px
       margin-left 60%
       margin-top 50px
-      
+
+      @media $tabletLandscapeBreakpoint
+        max-width 200px
+        margin-left 70%
+        margin-top 0
+
       h1
         font 400 2.5em Roboto
         margin 0 0 20px
-        
+
       p
         font 300 1.4em/1.4em Roboto
         margin 0 0 20px
-    
+
     .ray-back-container
       position absolute
       top 0
@@ -35,16 +43,25 @@
         bottom -300px
         width 400px
         transform translateX(-250px)
-        
+
+        @media $tabletLandscapeBreakpoint
+          transform translateX(-200px)
+
         img
           width 100%
-      
+
     .ice-cream
       position absolute
       left -150px
       top -150px
       height 350px
       width 350px
-      
+
+      @media $tabletPortraitBreakpoint
+        height 300px
+        left -100px
+        top -100px
+        width 300px
+
       img
         width 100%

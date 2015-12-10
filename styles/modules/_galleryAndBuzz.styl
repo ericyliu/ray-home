@@ -2,12 +2,17 @@
   .container
     padding 0 0 150px
     text-align center
-  
+
     .gallery-container
       height 1050px
       margin 0 auto
+      overflow hidden
       width 1050px
-      
+
+      @media $tabletLandscapeBreakpoint
+        height 1536px
+        width 768px
+
       .gallery-item
         background-color $brand-primary
         border 2px solid $white
@@ -17,30 +22,34 @@
         height 350px
         position relative
         width 350px
-        
+
+        @media $tabletLandscapeBreakpoint
+          height 384px
+          width 384px
+
         &.image-item img
           width 100%
           height 100%
-        
+
         &.quote-item
           padding 50px 20px
-          
+
           img
             border 1px solid white
             border-radius 100px
             height 50px
             width 50px
-          
+
           .username
             font 500 .9em Roboto
             margin-top 10px
             margin-bottom 5px
             text-transform uppercase
-          
+
           .quote
             font 1.2em Roboto Slab
             line-height 1.3em
-            
+
           .fa
             color darken($brand-primary, 10)
             font-size 28px

@@ -1,6 +1,10 @@
 .search-and-discovery
   height 1450px
   position relative
+
+  @media $tabletPortraitBreakpoint
+    height 1550px
+
   .container
     .right-side-background
       background-color lighten($gray-light, 25)
@@ -9,18 +13,25 @@
       position absolute
       right 0
       top 0
-      
+
     .blurb
       position absolute
+      left 50%
       width 300px
       height 400px
-      left 50%
 
       &.left
         text-align right
-        transform translateX(-550px)
         top 40px
-        
+        transform translateX(-550px)
+
+        @media $tabletLandscapeBreakpoint
+          left 20px
+          transform none
+
+        @media $tabletPortraitBreakpoint
+          left 50px
+
         h2
           margin-left auto
           margin-right 0
@@ -28,12 +39,20 @@
       &.right
         bottom 40px
         transform translateX(250px)
-        
+
+        @media $tabletLandscapeBreakpoint
+          left auto
+          right 20px
+          transform none
+
+        @media $tabletPortraitBreakpoint
+          right 50px
+
       h2
         line-height 1.2em
         width 280px
         margin-bottom 15px
-        
+
       p
         font-family HelveticaNeueLight
         margin-bottom 30px
@@ -43,14 +62,28 @@
       height 600px
       width 380px
       left 50%
-      
+
       img
         width 100%
-      
+
       &.left
         top 300px
         transform translateX(-320px)
-        
+
+        @media $tabletLandscapeBreakpoint
+          top 350px
+          transform translateX(-260px)
+
+        @media $tabletPortraitBreakpoint
+          top 400px
+
       &.right
         top 500px
         transform translateX(-50px)
+
+        @media $tabletLandscapeBreakpoint
+          top 450px
+          transform translateX(-100px)
+
+        @media $tabletPortraitBreakpoint
+          top 500px

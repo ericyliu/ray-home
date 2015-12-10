@@ -3,51 +3,85 @@ $text-color = #ABABAB
 .setup
   background url('../../assets/Setup_BG.jpg')
   color $white
+  overflow hidden
   text-align center
 
   .container
     padding 50px 0
     position relative
-    overflow hidden
-    
+
+    @media $mobileBreakpoint
+      padding-top 650px
+
     .ray-sample
       video
         position absolute
         height 550px
-        top 140px
+        bottom -50px
         transform translate(-400px)
-        
+
+        @media $tabletPortraitBreakpoint
+          bottom -60px
+          height 415px
+          transform translate(-340px)
+
+        @media $mobileBreakpoint
+          top 143px
+          left 50%
+          transform translate(-89px)
+
       img
+        bottom -110px
         position absolute
         height 800px
         left 50%
         transform translate(-750px)
-        top -50px
-    
+
+        @media $tabletPortraitBreakpoint
+          height 600px
+          bottom -100px
+          transform translate(-600px)
+
+        @media $mobileBreakpoint
+          top 0px
+          left 50%
+          transform translate(-353px)
+          height 605px
+
     .info-container
       display inline-block
-      margin-left 500px
+      margin-left 400px
       max-width 400px
       text-align left
-      
+
+      @media $tabletPortraitBreakpoint
+        margin-left 300px
+
+      @media $mobileBreakpoint
+        display block
+        margin 0 auto
+
       h2
         line-height 1.2em
-        
+
+        @media $mobileBreakpoint
+          text-align center
+
       .advantages
         margin-bottom 25px
-        
+
         .advantage
           color $text-color
           display table-row
           margin-bottom 30px
-          
+
           p
             display table-cell
             font-family HelveticaNeueLight
             padding 15px 0
             vertical-align middle
             width 250px
-          
+
           .image-container
             display table-cell
             width 150px
@@ -59,3 +93,7 @@ $text-color = #ABABAB
               border-radius 100px
               height 50px
               width 50px
+
+    a
+      @media $mobileBreakpoint
+        text-align center

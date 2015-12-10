@@ -1,33 +1,52 @@
 .apps
   background url('../../assets/Apps_BG.jpg')
   color $white
-  
+  overflow hidden
+
   .container
     padding 100px
     position relative
-    overflow hidden
-    
+
+    @media $tabletLandscapeBreakpoint
+      padding 75px 100px
+
+    @media $tabletPortraitBreakpoint
+      padding 75px
+
     .app-icons
       margin-top 50px
-      
+
       .app-icon
         display inline-block
         margin-right 30px
         width 60px
         height 60px
-        
+
         img
           width 100%
-        
+
     .blurb
       margin-top 70px
       width 50%
-      
+
+      @media $tabletLandscapeBreakpoint
+        margin-top 30px
+        width 35%
+
+      @media $tabletPortraitBreakpoint
+        width 45%
+
     .static-ray
       position absolute
       bottom -170px
       height 750px
       right -50px
-      
+
+      @media $tabletLandscapeBreakpoint
+        right -150px
+
+      @media $tabletPortraitBreakpoint
+        right -220px
+
       img
         height 100%

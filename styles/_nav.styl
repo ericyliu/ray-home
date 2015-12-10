@@ -7,35 +7,64 @@
   width 100%
   top 0
   z-index 10
-  
+
   .container
     position relative
     text-align center
-    
+
     .logo
       background-color $black
       border-radius 100px
       color $white
       height 50px
-      left 50px
+      left 10px
       position absolute
       text-align center
       top 5px
       width 50px
-      
+
     .links
       display inline-block
       font-size .8em
       margin 5px auto 0
       text-align center
 
+      @media $tabletPortraitBreakpoint
+        display none
+
       .link
         margin 0 20px
-        
+
         &:hover
-          color: $brand-primary 
-      
+          color: $brand-primary
+
     .buy
-      right 50px
+      right 10px
       top 8px
       position absolute
+
+      @media $tabletPortraitBreakpoint
+        right 60px
+
+      @media $mobileBreakpoint
+        display none
+
+        &.show-mobile
+          display block
+          width 120px
+
+    .fa-bars
+      cursor pointer
+      display none
+      font-size 2em
+      position absolute
+      right 10px
+      top 10px
+
+      @media $tabletPortraitBreakpoint
+        display block
+
+      @media $mobileBreakpoint
+        font-size 1.5em
+        top 15px
+        right 15px

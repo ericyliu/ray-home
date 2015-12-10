@@ -1,7 +1,7 @@
 body
   font 20px HelveticaNeueLight
   margin 0
-  
+
 h1
   font-family Roboto
   font-weight 100
@@ -9,19 +9,33 @@ h1
   font-size 2.4em
   line-height 1.4em
 
+  @media $mobileBreakpoint
+    font-size 32px
+    font-size 1.6em
+    font-weight 400
+
 h2
   font-family Roboto
   font-weight 100
   font-size 42px
   font-size 2.1em
   line-height 1.3em
-  
+
+  @media $mobileBreakpoint
+    font-size 32px
+    font-size 1.6em
+    font-weight 400
+
 h3
   font-family Roboto
   font-weight 100
   font-size 32px
   font-size 1.6em
   line-height 1.5em
+
+  @media $mobileBreakpoint
+    font-size 28px
+    font-size 1.4em
 
 a
   cursor pointer
@@ -33,31 +47,45 @@ a
     font-size 18px
     font-size .9em
     line-height 1em
-  
+
+    @media $mobileBreakpoint
+      font-size 16px
+      font-size .8em
+      font-weight 400
+
   &.arrow
     display block
     text-transform uppercase
-    
+
     &:after
       content: '>'
       margin-left 10px
       position absolute
       top -2px
-  
+
   &.primary-color
      color $brand-primary
-  
+
 p
   font-family Roboto
   font-weight 300
   font-size 20px
   font-size 1em
   line-height 1.4em
-  
+
 .container
   box-sizing border-box
   margin 0 auto
-  max-width $maxWidthDesktop
+  max-width $desktopWidth
+
+  @media $tabletLandscapeBreakpoint
+    max-width $tabletLandscapeWidth
+
+  @media $tabletPortraitBreakpoint
+    max-width $tabletPortraitWidth
+
+  @media $mobileBreakpoint
+    max-width $mobileWidth
 
 .btn
   border 2px solid $brand-primary
@@ -72,17 +100,17 @@ p
   line-height 42px
   text-align center
   width 170px
-  
+
   &:hover
     border-color lighten($brand-primary, 20)
     color lighten($brand-primary, 20)
-    
+
   &.text-white
     color $white
-  
+
   &.filled
     background-color $brand-primary
     color $white
-    
+
     &:hover
       background-color lighten($brand-primary, 20)

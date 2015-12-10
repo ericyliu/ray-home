@@ -1,1 +1,37 @@
-$maxWidthDesktop = 1200px
+$desktopWidth = 1200px
+$tabletLandscapeWidth = 992px
+$tabletPortraitWidth = 768px
+$mobileWidth = 480px
+
+$desktopBreakpoint = 'only screen and (min-width: 1200px)'
+$tabletLandscapeBreakpoint = 'only screen and (max-width: 1199px)'
+$tabletPortraitBreakpoint = 'only screen and (max-width: 991px)'
+$mobileBreakpoint = 'only screen and (max-width: 767px)'
+
+@media $desktopBreakpoint
+  .hide-desktop
+    display none
+
+  .show-desktop
+    display block
+
+@media $tabletLandscapeBreakpoint
+  .hide-tablet-landscape
+    display none
+
+  .show-tablet-landscape
+    display block
+
+@media $tabletPortraitBreakpoint
+  .hide-tablet-portrait
+    display none
+
+  .show-tablet-portrait
+    display block
+
+@media $mobileBreakpoint
+  .hide-mobile
+    display none
+
+  .show-mobile
+    display block
