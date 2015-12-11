@@ -53,14 +53,16 @@ a
       font-weight 400
 
   &.arrow
-    display block
     text-transform uppercase
+    fill white
 
-    &:after
-      content: '>'
-      margin-left 10px
-      position absolute
-      top -2px
+    .fa
+      font-weight bold
+      margin-left 6px
+      transition margin 100ms
+
+    &:hover .fa
+      margin-left 9px
 
   &.primary-color
      color $brand-primary

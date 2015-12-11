@@ -1,7 +1,8 @@
 .background-video
-  video(src='assets/hero.mp4' autoplay)
+  video(src='assets/hero.ogv' autoplay loop)
   .container
-    .ces-logo
+    .ces-logo.hide-mobile
+      img(src='assets/CES_Honoree_Large.png')
     h1 Ray Super Remote
     .intro The ultimate touchscreen universal remote control. Tap, swipe, and discover the future of TV.
     .controls
@@ -9,3 +10,9 @@
       .btn.text-white.video
           .fa.fa-play-circle
           | Watch Video
+
+  .fullscreen-video
+    .overlay
+    .video-container
+      video(src='assets/hero.ogv' controls)
+    .fa.fa-close

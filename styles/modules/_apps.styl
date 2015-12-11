@@ -2,6 +2,20 @@
   background url('../../assets/Apps_BG.jpg')
   color $white
   overflow hidden
+  position relative
+
+  .video-ray
+    position absolute
+    top 0
+    left 0
+    min-width 100%
+    min-height 100%
+
+    @media $tabletLandscapeBreakpoint
+      left -100px
+
+    @media $tabletPortraitBreakpoint
+      left -200px
 
   .container
     padding 100px

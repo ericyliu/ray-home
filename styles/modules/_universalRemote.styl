@@ -39,7 +39,6 @@
         max-width 250px
 
       .devices
-        border-bottom 1px solid $gray-lighter
         font-size 0
         padding 0 50px 50px
         text-align left
@@ -73,7 +72,22 @@
                 font-size 16px
                 font 400 .8em Roboto
 
+      .carousel-indicator
+        height 40px
+
+        .dot
+          border 1px solid $gray-light
+          border-radius 100px
+          display inline-block
+          height 10px
+          margin 0 5px
+          width 10px
+
+          &.active
+            background-color $brand-primary
+
       .device-finder
+        border-top 1px solid $gray-lighter
         padding 50px 150px
 
         @media $tabletPortraitBreakpoint

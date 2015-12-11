@@ -2,24 +2,15 @@
   .container
     h2 Press and Reviews
 
-    .reviews
-      .sources.hide-mobile
-        .source
-          img(src='assets/Press_Wired_Optimized.png')
-        .source
-          img(src='assets/Press_Recode_Optimized.png')
-        .source
-          img(src='assets/Press_TechCrunch_Optimized.png')
-        .source
-          img(src='assets/Press_NYT_Optimized.png')
-        .source
-          img(src='assets/Press_Adweek_Optimized.png')
+    .reviews.desktop.hide-mobile
+      .sources
 
-      .sources.hide-desktop.show-mobile
-        .source
-          img(src='assets/Press_Wired_Optimized.png')
+      .review
 
-      .review "The Ray Super Remote want's to declutter your coffee table and become the central nervous system of all your home entertainment systems."
+    .reviews.mobile.hide-desktop.hide-tablet-landscape.show-mobile
+      .scrollable-container
+        .scrollable
+      .carousel-indicator
 
     .remote
       img(src='assets/Ray_Press_Sideview_Optimized.png')
