@@ -20,43 +20,58 @@ $text-color = #43484F
         cursor pointer
         display inline-block
         height 100%
-        padding 0 20px 10px
+        padding 0 40px 10px
+
+        @media $tabletPortraitBreakpoint
+          padding 0 20px 10px
 
         &.active
-          border-bottom 2px solid $brand-primary
+          border-bottom 2px solid $brand-secondary
 
         img
           height 100%
 
-    .review
-      color $text-color
-      font-size 28px
-      font 300 1.4em/1.4em Roboto
-      margin 0 auto
-      max-width 700px
+    .desktop-review-container
+      height 200px
 
-      @media $tabletLandscapeBreakpoint
-        max-width 550px
+      .review
+        color $text-color
+        font-size 28px
+        font 300 1.4em/1.4em RobotoSlab
+        margin 0 auto
+        max-width 700px
+        position relative
+        top 50%
+        transform translateY(-50%)
 
-      @media $mobileBreakpoint
-        max-width 400px
+        @media $tabletLandscapeBreakpoint
+          max-width 550px
+
+        @media $mobileBreakpoint
+          max-width 400px
 
     &.mobile
       .scrollable-container
-        height 360px
+        height 250px
         width 100%
         overflow-x auto
 
-        .review-container
-          float left
-          width 480px
+        .scrollable
+          height 100%
 
-          .icon
-            height 20px
-            margin 10px 0 50px
+          .review-container
+            float left
+            width 480px
+            position relative
+            top 50%
+            transform translateY(-50%)
 
-            img
-              height 100%
+            .icon
+              height 20px
+              margin 10px 0 50px
+
+              img
+                height 100%
 
       .carousel-indicator
         height 40px
