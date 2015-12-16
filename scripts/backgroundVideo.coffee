@@ -8,6 +8,7 @@ class BackgroundVideo
   toggleVideoModal: =>
     @videoModal.toggle()
 
+
 $(document).ready -> new BackgroundVideo(
   $('.background-video .btn.video')
   $('.background-video .fullscreen-video')

@@ -65,6 +65,7 @@ class Gallery
     @galleryContainer.css 'height', "#{height * 2}px"
     @loadMoreButton.css 'display', 'none'
 
+
 $(document).ready -> new Gallery(
   $('.gallery-and-buzz .gallery-container')
   $('.gallery-and-buzz .btn')

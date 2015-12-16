@@ -1,4 +1,7 @@
 class UniversalRemote
+  colors: ['#76BFBB','#76BFA6','#76BFA6','#7787CD']
+  colorIndex: 0
+
   devices: [
     {label: 'Set Top Box', icon: 'assets/devices/STB.svg'}
     {label: 'TV', icon: 'assets/devices/TV.svg'}
@@ -11,9 +14,10 @@ class UniversalRemote
     {label: 'Xbox', icon: 'assets/devices/Xbox.svg'}
   ]
 
-  constructor: (@devicesContainer, @carouselIndicator) ->
+  constructor: (@container, @devicesContainer, @carouselIndicator) ->
     @setup()
     @devicesContainer.on 'scroll', @onScroll
+    setInterval @changeColor, 5000
 
   setup: =>
     container = @devicesContainer.find '.scrollable'
@@ -34,7 +38,14 @@ class UniversalRemote
     @carouselIndicator.find('.dot').removeClass 'active'
     $(@carouselIndicator.find('.dot')[index]).addClass 'active'
 
+  changeColor: =>
+    @container.css 'background-color', @colors[@colorIndex]
+    @colorIndex++
+    @colorIndex = 0 if @colorIndex > @colors.length
+
+
 $(document).ready -> new UniversalRemote(
+  $('.universal-remote')
   $('.universal-remote .devices')
   $('.universal-remote .carousel-indicator')
 )
