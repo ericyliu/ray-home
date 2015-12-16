@@ -1,4 +1,6 @@
 class Gallery
+  loadMoreIndex: 0
+
   gallery: [
       type: 'image'
       source: 'https://cdn.ray.co/assets/images/Gallery_01.jpg'
@@ -62,8 +64,9 @@ class Gallery
 
   loadMore: =>
     height = 1170
-    @galleryContainer.css 'height', "#{height * 2}px"
-    @loadMoreButton.css 'display', 'none'
+    @galleryContainer.css 'height', "#{height * (@loadMoreIndex + 2)}px"
+    @loadMoreIndex++;
+    @loadMoreButton.css 'display', 'none' if @loadMoreIndex > 1
 
 
 $(document).ready -> new Gallery(
